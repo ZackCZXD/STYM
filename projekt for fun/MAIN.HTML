@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>STÝM</title>
+	<style type="text/css">
+		body {
+			background-image: url("bg.jpg");
+			background-size:100%;
+			background-attachment: fixed;
+			margin: 15px;
+			 }
+		div {
+			text-align: center;
+			}
+		.menu_leva1 {
+			grid-area: menu_leva1;
+			width: 100%;
+			height: 100%;
+		}
+		.menu_leva2 {
+			grid-area: menu_leva2;
+			width: 100%;
+			height: 100%;
+		}
+		.menu_leva3 {
+			grid-area: menu_leva3;
+			width: 100%;
+			height: 100%;
+		}
+		.menu_leva4 {
+			grid-area: menu_leva4;
+			width: 100%;
+			height: 100%;
+		}
+		.telo {
+			color: white;
+			grid-area: telo;
+			width: 100%;
+
+		}
+		.mrizka {
+			min-width: 804px;
+			display: grid;
+			grid-template-rows: 10% 90%;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-template-areas:
+
+			"menu_leva1 menu_leva2 menu_leva3 menu_leva4"
+			"telo telo telo telo";
+		}
+		.tlacitkoa { float: left; width: 95%; display: block; padding: 10px; background: black; color: white; cursor: default; text-decoration: none; font-size: 25px;}
+
+		.tlacitkob { float: left; width: 95%; display: block; padding: 10px; background: #626567; color: black; cursor: default; text-decoration: none; font-size: 25px;}
+		.tlacitkob:hover {color: white; background: black}
+
+		
+</style>
+</head>
+<body>
+	<div class="mrizka">
+		<div class="menu_leva1">
+			<a class="tlacitkoa">HLAVNÍ STRÁNKA</a>
+		</div>
+		<div class="menu_leva2">
+			<a class="tlacitkob" href="knihovna1.html">KNIHOVNA</a>
+		</div>
+		<div class="menu_leva3">
+			<a class="tlacitkob">KNIHOVNA</a>
+		</div>
+		<div class="menu_leva4">
+			<a class="tlacitkob">KNIHOVNA</a>
+		</div>
+		<div class="telo">
+			<h2 style="margin: 0px;">
+				INFO O TÉTO STRÁNCE
+				<br><br>
+				Nové středisko her kde si každý vybere. I když tu není moc velké množství her, i přesto si tu každý najde to pravé pro něho.
+				<br>
+				Všechny hry jsou tu zcela zadarmo. (Všechny informace jsou na 100% pravdivé.)
+				<br><br>
+			</h2>
+			<img src="STYM.jpg" style="max-width: 75%; min-width: 546px; border-radius: 50px;">
+		</div>
+	</div>
+</body>
+</html>

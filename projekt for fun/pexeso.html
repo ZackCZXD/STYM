@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<center>
+	<style type="text/css">
+		body{
+			background-image:url('https://i.gifer.com/E6Px.gif');
+		}
+		.a1{
+			background-color: lightgray;
+			border: solid black;
+			justify-content: center;
+		}
+		.a2{
+			background-color: lightgray;
+			border: solid black;
+			justify-content: center;
+		}
+		.a3{
+			background-color: lightgray;
+			border: solid black;
+			justify-content: center;
+		}
+		.baf{
+			display: grid;
+			grid-template-areas:	"a1 a1 a1 a1"
+									"a2 a2 a2 a2"
+									"a3 a3 a3 a3";
+			margin-left: 20vw;
+			margin-right: 25vw;
+
+		}
+	</style>
+	<meta charset="utf-8">
+	<title>PEXESO</title>
+</head>
+<body onload="zacatek()">
+	<div class="baf">
+		<div class="a1" id="divik1" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a1" id="divik2" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a1" id="divik3" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a1" id="divik4" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a2" id="divik5" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a2" id="divik6" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a2" id="divik7" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a2" id="divik8" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a3" id="divik9" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a3" id="divik10" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a3" id="divik11" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+		<div class="a3" id="divik12" onclick="haf(this)" style="width: 300px;height: 300px;"></div>
+	</div>
+	<script type="text/javascript">
+		var d1=document.getElementById('divik1');
+		var d2=document.getElementById('divik2');
+		var d3=document.getElementById('divik3');
+		var d4=document.getElementById('divik4');
+		var d5=document.getElementById('divik5');
+		var d6=document.getElementById('divik6');
+		var d7=document.getElementById('divik7');
+		var d8=document.getElementById('divik8');
+		var d9=document.getElementById('divik9');
+		var d10=document.getElementById('divik10');
+		var d11=document.getElementById('divik11');
+		var d12=document.getElementById('divik12');
+		var kliknuto;
+		function smaz(){
+			if(d1.style.backgroundColor !="black"){
+				d1.style.backgroundColor="lightgray";}
+			if(d2.style.backgroundColor !="black"){
+				d2.style.backgroundColor="lightgray";}
+			if(d3.style.backgroundColor !="black"){
+				d3.style.backgroundColor="lightgray";}
+			if(d4.style.backgroundColor !="black"){
+				d4.style.backgroundColor="lightgray";}
+			if(d5.style.backgroundColor !="black"){
+				d5.style.backgroundColor="lightgray";}
+			if(d6.style.backgroundColor !="black"){
+				d6.style.backgroundColor="lightgray";}
+			if(d7.style.backgroundColor !="black"){
+				d7.style.backgroundColor="lightgray";}
+			if(d8.style.backgroundColor !="black"){
+				d8.style.backgroundColor="lightgray";}
+			if(d9.style.backgroundColor !="black"){
+				d9.style.backgroundColor="lightgray";}
+			if(d10.style.backgroundColor!="black"){
+				d10.style.backgroundColor="lightgray";}
+			if(d11.style.backgroundColor!="black"){
+				d11.style.backgroundColor="lightgray";}
+			if(d12.style.backgroundColor!="black"){
+				d12.style.backgroundColor="lightgray";}
+		}
+		function haf(cesta){
+			if(cesta.id=="divik1"){
+				if(kliknuto=="green"){
+					cesta.style.backgroundColor="black";
+					d9.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="green";
+					kliknuto="green";
+				}
+				}
+			if(cesta.id=="divik2"){
+				if(kliknuto=="aqua"){
+					cesta.style.backgroundColor="black";
+					d10.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="aqua";
+					kliknuto="aqua";
+				}
+			}
+			if(cesta.id=="divik3"){
+				if(kliknuto=="orange"){
+					cesta.style.backgroundColor="black";
+					d6.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="orange";
+					kliknuto="orange";
+				}
+			}
+			if(cesta.id=="divik4"){
+				if(kliknuto=="red"){
+					cesta.style.backgroundColor="black";
+					d12.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="red";
+					kliknuto="red";
+				}
+			}
+			if(cesta.id=="divik5"){
+				if(kliknuto=="yellow"){
+					cesta.style.backgroundColor="black";
+					d8.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="yellow";
+					kliknuto="yellow";
+				}
+			}
+			if(cesta.id=="divik6"){
+				if(kliknuto=="orange"){
+					cesta.style.backgroundColor="black";
+					d3.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="orange";
+					kliknuto="orange";
+				}
+			}
+			if(cesta.id=="divik7"){
+				if(kliknuto=="gray"){
+					cesta.style.backgroundColor="black";
+					d11.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="gray";
+					kliknuto="gray";
+				}
+			}
+			if(cesta.id=="divik8"){
+				if(kliknuto=="yellow"){
+					cesta.style.backgroundColor="black";
+					d5.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="yellow";
+					kliknuto="yellow";
+				}
+			}
+			if(cesta.id=="divik9"){
+				if(kliknuto=="green"){
+					cesta.style.backgroundColor="black";
+					d1.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="green";
+					kliknuto="green";
+				}
+			}
+			if(cesta.id=="divik10"){
+				if(kliknuto=="aqua"){
+					cesta.style.backgroundColor="black";
+					d2.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="aqua";
+					kliknuto="aqua";
+				}
+			}
+			if(cesta.id=="divik11"){
+				if(kliknuto=="gray"){
+					cesta.style.backgroundColor="black";
+					d7.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="gray";
+					kliknuto="gray";
+				}
+			}
+			if(cesta.id=="divik12"){
+				if(kliknuto=="red"){
+					cesta.style.backgroundColor="black";
+					d4.style.backgroundColor="black";
+				}
+				else{
+					smaz();
+					cesta.style.backgroundColor="red";
+					kliknuto="red";
+				}
+			}
+			if (d1.style.backgroundColor=="black" && d2.style.backgroundColor=="black" && d3.style.backgroundColor=="black" && d4.style.backgroundColor=="black" && d5.style.backgroundColor=="black" && d6.style.backgroundColor=="black" && d7.style.backgroundColor=="black" && d8.style.backgroundColor=="black" && d9.style.backgroundColor=="black" && d10.style.backgroundColor=="black" && d11.style.backgroundColor=="black" && d12.style.backgroundColor=="black"){
+				d1.style.backgroundColor="transparent";
+				d2.style.backgroundColor="transparent";
+				d3.style.backgroundColor="transparent";
+				d4.style.backgroundColor="transparent";
+				d5.style.backgroundColor="transparent";
+				d6.style.backgroundColor="transparent";
+				d7.style.backgroundColor="transparent";
+				d8.style.backgroundColor="transparent";
+				d9.style.backgroundColor="transparent";
+				d10.style.backgroundColor="transparent";
+				d11.style.backgroundColor="transparent";
+				d12.style.backgroundColor="transparent";
+				d1.style.border="none";
+				d2.style.border="none";
+				d3.style.border="none";
+				d4.style.border="none";
+				d5.style.border="none";
+				d6.style.border="none";
+				d7.style.border="none";
+				d8.style.border="none";
+				d9.style.border="none";
+				d10.style.border="none";
+				d11.style.border="none";
+				d12.style.border="none";
+				d1.onclick="none";
+				d2.onclick="none";
+				d3.onclick="none";
+				d4.onclick="none";
+				d5.onclick="none";
+				d6.onclick="none";
+				d7.onclick="none";
+				d8.onclick="none";
+				d9.onclick="none";
+				d10.onclick="none";
+				d11.onclick="none";
+				d12.onclick="none";
+				setTimeout(()=>{alert("GRATULACE... vyhrál jsi");},10);
+				setTimeout(()=>{location.reload();},11);
+			}
+		}
+		function zacatek(){
+			window.open("pexeso.html");
+			if (confirm("CHCEŠ HRÁT PEXESO?")==false){
+				window.close();
+			}
+		}
+	</script>
+	<p id="bum"></p>
+</body>
+</html>

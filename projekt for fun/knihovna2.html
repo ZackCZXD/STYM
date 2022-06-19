@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>LIBRARY</title>
+	<style type="text/css">
+		body {
+			background-image: url("bg.jpg");
+			background-size:100%;
+			background-attachment: fixed;
+			margin: 15px;
+			font-size: 20px;
+		}
+		div {
+			text-align: center;
+		}
+		.menu_leva1 {
+			grid-area: menu_leva1;
+			width: 100%;
+			height: 100%;
+		}
+		.menu_leva2 {
+			grid-area: menu_leva2;
+			width: 100%;
+			height: 100%;
+		}
+		.menu_leva3 {
+			grid-area: menu_leva3;
+			width: 100%;
+			height: 100%;
+		}
+		.menu_leva4 {
+			grid-area: menu_leva4;
+			width: 100%;
+			height: 100%;
+		}
+		.telo {
+			grid-area: telo;
+			color: white;
+			width: 100%;
+		}
+		.telo2 {
+			grid-area: telo2;
+			color: white;
+			width: 100%;
+		}
+
+		.mrizka {
+			min-width: 804px;
+			display: grid;
+			grid-template-rows: 10% 90%;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-template-areas:
+
+			"menu_leva1 menu_leva2 menu_leva3 menu_leva4"
+			"telo telo2 telo2 telo2";
+		}
+		.tlacitkoa { float: left; width: 95%; display: block; padding: 10px; background: #626567; color: black; cursor: default; text-decoration: none; font-size: 25px;}
+		.tlacitkoa:hover {color: white; background: black}
+		
+		.tlacitkob { float: left; width: 95%; display: block; padding: 10px; background: black; color: white; cursor: default; text-decoration: none; font-size: 25px;}
+
+		.tlacitko {float: left; height: 10%; width: 70%; display: block; padding: 15px; background: #626567; color: black; cursor: default; text-decoration: none; border-radius: 0px;}
+		.tlacitko:hover {color: white; background: black;}
+
+		.tlacitko0 { float: left; height: 10%; width: 70%; display: block; padding: 15px; background: #626567; color: black; cursor: default; text-decoration: none; border-top-left-radius: 50px; border-top-right-radius: 50px;}
+		.tlacitko0:hover {color: white; background: black;}
+
+		.tlacitko1 {float: left; height: 10%; width: 70%; display: block; padding: 15px; background: #626567; color: black; cursor: default; text-decoration: none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+		.tlacitko1:hover {color: white; background: black;}
+
+		.tlacitko2 {float: left; height: 10%; width: 70%; display: block; padding: 15px; background: #626567; color: black; cursor: default; text-decoration: none; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+		.tlacitko2:hover {color: white; background: black;}
+
+		.tlacitko3 { padding: 15px; background: #626567; color: black; cursor: default; text-decoration: none; border-radius: 50px;}
+		.tlacitko3:hover {color: white; background: black;}
+
+		.tlacitko4 {float: left; height: 10%; width: 70%; display: block; padding: 15px; background: black; color: #fff; cursor: default; text-decoration: none;}
+	</style>
+</head>
+<body>
+<div class="mrizka">
+		<div class="menu_leva1">
+			<a class="tlacitkoa" href="main.html">HLAVNÍ STRÁNKA</a>
+		</div>
+		<div class="menu_leva2">
+			<a class="tlacitkob">KNIHOVNA</a>
+		</div>
+		<div class="menu_leva3">
+			<a class="tlacitkoa">KNIHOVNA</a>
+		</div>
+		<div class="menu_leva4">
+			<a class="tlacitkoa">INFORMACE</a>
+		</div>
+	<div class="telo">
+		<br>
+		<a class="tlacitko2" href="knihovna1.html">PIŠKVORKY</a>
+		<a class="tlacitko4">PEXESO</a>
+		<a class="tlacitko">...</a>
+		<a class="tlacitko">...</a>
+		<a class="tlacitko">...</a>
+		<a class="tlacitko">...</a>
+		<a class="tlacitko1">...</a>
+	</div>
+	<div class="telo2"><br><br><br><br><br><br>
+  		<img src="pexeso.png" style="max-width: 260px; max-height: 260px; min-width: 260px; min-height: 260px;">
+  			<h2 style="color: white;">
+  				PEXESO
+  				<br><br>
+  			</h2>
+  		<a href="pexeso.html" class="tlacitko3">
+			HRÁT
+ 		</a>	
+	</div>
+</div>
+</body>
+</html>
